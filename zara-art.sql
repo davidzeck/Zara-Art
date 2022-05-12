@@ -58,12 +58,16 @@ CREATE TABLE `users` (
 -- Indexes for dumped tables
 --
 CREATE TABLE womens_products (
-    name varchar(255) NOT NULL,
+  item_id int(11),
+  name varchar(255) NOT NULL,
     price int NOT NULL,
     image VARBINARY(MAX),
-    description varchar(255),
-    PRIMARY KEY (ID)
+    description varchar(255)
+   
 );
+--Indexes for womens_products
+ALTER TABLE `womens_products` CHANGE `item_id` `item_id` INT( 11 ) NOT NULL AUTO_INCREMENT;
+  
 --
 -- Indexes for table `admin`
 --
