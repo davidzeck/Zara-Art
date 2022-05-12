@@ -57,7 +57,13 @@ CREATE TABLE `users` (
 --
 -- Indexes for dumped tables
 --
-
+CREATE TABLE womens_products (
+    name varchar(255) NOT NULL,
+    price int NOT NULL,
+    image VARBINARY(MAX),
+    description varchar(255),
+    PRIMARY KEY (ID)
+);
 --
 -- Indexes for table `admin`
 --
